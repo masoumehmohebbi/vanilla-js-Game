@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game-1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <h1>Put each shape in the right place. (By dragging)</h1>
+     <div class="container-game">
+
+        <div class="shapes">
+
+            <div class="circle" id="1" draggable="true" ondragstart="ondragStartFunc(event)" ></div>
+            <div class="rect" id="2" draggable="true" ondragstart="ondragStartFunc(event)" ></div>
+            <div class="circle" id="3" draggable="true" ondragstart="ondragStartFunc(event)" ></div>
+            <div class="rect" id="4" draggable="true" ondragstart="ondragStartFunc(event)" ></div>
+            <div class="circle" id="5" draggable="true" ondragstart="ondragStartFunc(event)" ></div>
+            <div class="rect" id="6" draggable="true" ondragstart="ondragStartFunc(event)" ></div>
+
+        </div>
+
+        <div class="shapes-place">
+            <h1>Circle</h1>
+            <table class="circle-place">
+                <tr>
+                    <td class="circle" data-name="circle" ondrop="dropHandler(event)" ondragover="dragOverHandler(event)"></td>
+                    <td class="circle" data-name="circle" ondrop="dropHandler(event)" ondragover="dragOverHandler(event)"></td>
+                    <td class="circle" data-name="circle" ondrop="dropHandler(event)" ondragover="dragOverHandler(event)"></td>
+                </tr>
+            </table>
+            
+            <table class="rect-place">
+                <tr><h1>Square</h1>
+                    <td ondrop="dropHandlerSquare(event)" ondragover="dragOverHandler(event)"></td>
+                    <td ondrop="dropHandlerSquare(event)" ondragover="dragOverHandler(event)"></td>
+                    <td ondrop="dropHandlerSquare(event)" ondragover="dragOverHandler(event)"></td>
+                </tr>
+            </table>
+        </div>
+     </div>
+    </section>
+<script src="script.js"></script>    
+</body>
+</html>

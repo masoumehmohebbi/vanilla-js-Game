@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column; 
+     width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container-game{
+    display: flex;
+}
+.container-game .shapes{
+    width: 30vw;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding-top: 3rem;
+}
+.circle{
+    width: 70px;
+    height:70px;
+    border: 10px solid red;
+    border-radius: 50%;
+}
+.rect{
+    width: 70px;
+    height: 70px;
+    border: 10px solid blue;
+}
+/* The Shape Places */
+.container-game .shapes-place{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.circle-place td, .rect-place td{
+    border: 1px solid #000;
+    width: 10vw;
+    height: 15vh;
+    align-items: center;
+    padding-left: 32px;
+}
+.circle-place{
+    margin-bottom: 1rem;
+}
