@@ -9,43 +9,30 @@
      width: 100vw;
     height: 100vh;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
+}
+.container h1{
+    color: rgb(247, 170, 27);
+    text-shadow: 1px 1px 1px #000;
+}
+.header-img{
+    width: 20rem;
+    height: 20rem;
+}
+.container .btn-click{
+    padding: 0.6rem 1.6rem;
+    box-shadow: 1px 1px 1px #000;
+    background-color: rgb(247, 170, 27);
+    font-size: 1.5rem;
+    border-radius: 5rem;
 }
 .container-game{
     display: flex;
 }
-.container-game .shapes{
-    width: 30vw;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    padding-top: 3rem;
-}
-.circle{
-    width: 70px;
-    height:70px;
-    border: 10px solid red;
-    border-radius: 50%;
-}
-.rect{
-    width: 70px;
-    height: 70px;
-    border: 10px solid blue;
-}
-/* The Shape Places */
-.container-game .shapes-place{
-    width: 40vw;
+.container-img{
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-}
-.circle-place td, .rect-place td{
-    border: 1px solid #000;
-    width: 10vw;
-    height: 15vh;
     align-items: center;
-    padding-left: 32px;
-}
-.circle-place{
-    margin-bottom: 1rem;
+    width: 11rem;
+    height: 11rem;
 }
